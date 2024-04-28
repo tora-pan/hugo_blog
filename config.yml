@@ -1,3 +1,4 @@
 baseURL: ""
 title: "Tech with TORA"
 theme: PaperMod
+ignoreErrors: ["error-remote-getjson"]
