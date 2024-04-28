@@ -21,13 +21,13 @@ params:
   description: "This is a website of a Japanese Speaking|Software Developing|Motivating guy named **Travis Pandos**, who vomits his thoughts into a markdown file and push them into the ether. Hopefully you can learn some cool things or get motivated along the way."
   keywords: [Blog, Portfolio, Software Development]
   author: Travis Pandos
-  #images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["logo.svg"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
@@ -41,7 +41,7 @@ params:
 
   label:
     text: "Travis Pandos"
-    icon: "images/coding.png"
+    icon: "logo.svg"
     iconHeight: 35
 
   # profile-mode
@@ -49,7 +49,7 @@ params:
     enabled: true # needs to be explicitly set
     # title: "Welcome! \U0001F44B"
     subtitle: "This is a website of a Japanese Speaking | Software Developing | Motivating guy named **Travis Pandos**, who vomits his thoughts into a markdown file and push them into the ether. Hopefully you can learn some cool things or get motivated along the way."
-    # imageUrl: "images/dp.png"
+    imageUrl: "logo.svg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: "Travis (TORA) Pandos"
