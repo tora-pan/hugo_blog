@@ -1,4 +1,4 @@
 baseURL: "https://tora-pan.github.io/hugo_blog/"
 title: "Tech with TORA"
-theme: PaperMod
+theme: ["PaperMod"]
 ignoreErrors: ["error-remote-getjson"]
