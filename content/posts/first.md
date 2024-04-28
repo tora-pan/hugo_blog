@@ -5,4 +5,4 @@ draft: false
 ---
 # First post
 
-### Seems to be working. Sweet.
+### Seems to be working. Sweet!
