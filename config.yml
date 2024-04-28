@@ -1,4 +1,125 @@
-baseURL: "https://tora-pan.github.io/hugo_blog/"
-languageCode: "en-us"
-title: "Tech with TORA"
-theme: ["PaperMod"]
+languageCode: en-us
+baseURL: "https://tora-pan.github.io/"
+title: Tech with TORA
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+#googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Tech with TORA
+  description: "This is a website of a Japanese Speaking|Software Developing|Motivating guy named **Travis Pandos**, who vomits his thoughts into a markdown file and push them into the ether. Hopefully you can learn some cool things or get motivated along the way."
+  keywords: [Blog, Portfolio, Software Development]
+  author: Travis Pandos
+  #images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  label:
+    text: "Travis Pandos"
+    icon: "images/coding.png"
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    # title: "Welcome! \U0001F44B"
+    subtitle: "This is a website of a Japanese Speaking | Software Developing | Motivating guy named **Travis Pandos**, who vomits his thoughts into a markdown file and push them into the ether. Hopefully you can learn some cool things or get motivated along the way."
+    # imageUrl: "images/dp.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: "Travis (TORA) Pandos"
+    buttons:
+      - name: Blogs
+        url: posts
+      - name: Projects
+        url: projects
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Welcome! \U0001F44B"
+    Content: "This is a website of a Japanese Speaking|Software Developing|Motivating guy named **Travis Pandos**, who vomits his thoughts into a markdown file and push them into the ether. Hopefully you can learn some cool things or get motivated along the way."
+
+  socialIcons:
+    # - name: youtube
+    #   url: "http://youtube.com/dataprofessor"
+    # - name: medium
+    #   url: "https://medium.com/@data-professor"
+    - name: twitter
+      url: "https://twitter.com/tech_with_tora"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/travis-pandos/"
+    - name: github
+      url: "https://github.com/tora-pan"
+    # - name: buymeacoffee
+    #   url: "https://www.buymeacoffee.com/dataprofessor"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+
+  editPost:
+#    URL: "https://github.com/chanin-www/content"
+#    Text: "Suggest Changes" # edit text
+    URL: ""
+    Text: "" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 3
+    - identifier: blog
+      name: Blogs 
+      url: /posts/
+      weight: 1
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 2
